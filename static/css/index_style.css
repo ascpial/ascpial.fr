@@ -1,0 +1,207 @@
+:root {
+    --top-height: 60px;
+}
+body {
+    font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    background-color: #2f3136;
+    color: #ffffff;
+    padding-top: var(--top-height);
+}
+.top_section {
+    background-color:#202225;
+    height: var(--top-height);
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+.top_section h1 {
+    top:0px;
+    margin-top: 0px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    height: var(--top-height);
+}
+.top_section h1 span {
+    vertical-align: middle;
+}
+.top_section h1 .discriminator {
+    max-width: 0px;
+    display:inline-block;
+    transition: max-width 0.5s;
+    overflow: hidden;
+    color: #b9bbbe;
+}
+.top_section h1:hover .discriminator {
+    max-width: 100px;
+}
+.top_section img.logo {
+    height: var(--top-height);
+    border-radius: 50%;
+    display:inline-block;
+}
+h2 {
+    color: #b9bbbe;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-family: Ginto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project_card {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #36393f;
+    border-radius: 10px;
+    width: 400px;
+    height:150px;
+    display: flex;
+    position:relative;
+    color:#ffffff;
+    text-decoration: none;
+}
+.project_card .logo {
+    height: 150px;
+    width: 150px;
+    margin:auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    transition: border-radius 0.25s;
+    cursor: pointer;
+    background-color: #404144;
+}
+.project_card .join {
+    visibility: hidden;
+    opacity: 0;
+	position: absolute;
+    border-radius: 5px;
+    width:150px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    top:-40px;
+	background: #404144;
+    transition: opacity 0.25s;
+}
+.project_card .logo:hover + .join {
+    visibility: visible;
+    opacity: 1;
+}
+.project_card .join:before {
+    content: "";
+    width: 30px;
+    height:40px;
+    background: url("../img/discord.png") center/contain;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left:2px;
+}
+.project_card .join:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(64, 65, 68, 0);
+	border-top-color: #404144;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.project_card:hover .logo {
+    border-radius: 30%;
+}
+
+.project_card .indev {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fcb929;
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    left: 110px;
+}
+.project_card .indev .warning {
+    position:absolute;
+    bottom: 55px;
+    left: -40px;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    overflow: hidden;
+    background: #fcb929;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: height 0.25s;
+}
+.project_card:hover .indev .warning {
+    height: 40px;
+    width: 120px;
+    visibility: visible;
+}
+.project_card .indev .arrow {
+	position: absolute;
+	bottom: 25px;
+	left: 20px;
+	height: 0;
+	width: 0;
+	content: "";
+    visibility: hidden;
+	border: solid transparent;
+	border-top-color: #fcb929;
+	border-width: 15px;
+	margin-left: -15px;
+}
+.project_card:hover .indev .arrow {
+    visibility: visible;
+}
+.project_card .infos {
+    width:250px;
+}
+.project_card .infos h3 {
+    text-align: center;
+    width:100%;
+}
+.project_card .infos .description {
+    padding-left: 5px;
+}
+a.neutral, a.neutral:visited {
+    text-decoration: none;
+    color:#1515d8;
+}
+a.github {
+    background-color: #2f3136;
+    display:block;
+    color:#ffffff;
+    text-decoration: none;
+    position:relative;
+    width: 206px;
+    height: 24px;
+    margin-top:5px;
+    padding-left: 34px;
+    border-radius: 5px;
+    line-height: 24px;
+}
+a.github:before {
+    width:24px;
+    height:24px;
+    display: block;
+    position:absolute;
+    left:4px;
+    content: "";
+    background: url("../img/github.png");
+    background-size: 24px 24px;
+}
