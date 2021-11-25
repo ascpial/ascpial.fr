@@ -13,41 +13,44 @@
         <h2>À propos de moi</h2>
         <p>Je suis un développeur français spécialisé dans discord. Je développe surtout en python mais je maîtrise aussi les langages du web (html, css, js).</p>
         <h2>Me contacter</h2>
-        <p>Vous pouvez m'envoyer un mail à l'adresse mon adresse mail <a class="neutral" href = "mailto: mail@ascpial.Fr">mail@ascpial.fr</a>.</p>
-        <p>Vous pouvez aussi me retrouver sur <a href="https://github.com/ascpial" class="neutral" target="_blank">Github</a>.</p>
+        <p>J'ai un <a class="neutral" href="#guild">serveur discord</a> ! Rejoins le pour discuter avec moi et découvrir des projets.</p>
+        <p>Vous pouvez m'envoyer un mail à l'adresse mon adresse mail <a class="neutral" href = "mailto: mail@ascpial.fr">mail@ascpial.fr</a> !</p>
+        <p>Vous pouvez aussi me retrouver sur <a href="https://github.com/ascpial" class="neutral" target="_blank">Github</a>, et voir mes projets public tels que <a class="neutral" href="#gametest">GameTest</a> !</p>
         <h2>Mes projets</h2>
         <div class="projects">
-            <div class="project_card">
+            <div class="project_card" id="gipsy">
+                <img class="logo" alt="Logo Gipsy" src="static/img/gipsy.png" onclick="window.open('https://discord.gg/gunivers', 'blank_')">
+                <div class="join">Rejoindre</div>
+                <div class="infos">
+                    <h3>Gipsy</h3>
+                    <div class="description">
+                        Je compte participer au développement de ce bot open source !
+                        <a class="gitlab" href="https://gitlab.com/Altearn/gunivers/discord/Gipsy" target="_blank">Voir sur gitlab</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project_card" id="astronium">
                 <img class="logo" alt="Logo Astronium" src="static/img/astronium.png" onclick="window.open('http://ascpial.fr/astronium', '_blank');">
                 <div class="join">Rejoindre</div>
                 <div class="infos">
                     <h3>🌌Astronium ╔╣FR╠╗</h3>
-                    <div class="description">Développement d'un bot discord pour un serveur de jeux vidéos, avec des fonctionnalités inédites.</div>
+                    <div class="description">
+                        Développement d'un bot discord pour un serveur de jeux vidéos, avec des fonctionnalités inédites.
+                    </div>
                 </div>
             </div>
-            <div class="project_card">
+            <div class="project_card" id="shoutbot">
                 <img class="logo" alt="Logo Tiplanet" src="static/img/tiplanet.png" onclick="window.open('http://ascpial.fr/tiplanet', '_blank');">
                 <div class="join">Rejoindre</div>
                 <div class="infos">
                     <h3>Tiplanet</h3>
-                    <div class="description">Participation au développement d'un bot pour lier le chat de <a href="https://tiplanet.org" class="neutral" target="_blank">tiplanet</a> à discord.
+                    <div class="description">
+                        Participation au développement d'un bot pour lier le chat de <a href="https://tiplanet.org" class="neutral" target="_blank">tiplanet</a> à discord.
                         <a class="github" href="https://github.com/TI-Planet/ShoutBot" target="_blank">Voir sur github</a>
                     </div>
                 </div>
             </div>
-            <div class="project_card">
-                <div class="indev" title="En développement">
-                    <div class="warning">En développement</div><div class="arrow"></div>
-                    !
-                </div>
-                <img class="logo" alt="Logo Astronium" src="static/img/astronium.png" onclick="window.open('http://ascpial.fr/astronium', '_blank');">
-                <div class="join">Rejoindre</div>
-                <div class="infos">
-                    <h3>🌌Astronium Bot V2</h3>
-                    <div class="description">Je travailles en ce moment sur une nouvelle version du bot discord dans le but d'les nouvelles fonctionnalités de discord !</div>
-                </div>
-            </div>
-            <div class="project_card">
+            <div class="project_card" id="gametest">
                 <div class="indev" title="En développement">
                     <div class="warning">En développement</div><div class="arrow"></div>
                     !
@@ -60,6 +63,26 @@
                     <a class="github" href="https://github.com/ascpial/GameTest" target="_blank">Voir sur github</a>
                 </div>
             </div>
+            <div class="project_card" id="odax">
+                <img class="logo" alt="Logo Odax prototype" src="static/img/odax.png">
+                <div class="infos">
+                    <h3>Odax Prototype</h3>
+                    <div class="description">
+                        Quelques bots sur lesquels j'ai un peu développé avec un ami, pas grand chose à voir...
+                    </div>
+                </div>
+            </div>
+            <div class="project_card" id="guild">
+                <img class="logo" alt="Icône du serveur" src="static/img/avatar.png" onclick="window.open('http://ascpial.fr/guild', '_blank');">
+                <div class="join">Rejoindre</div>
+                <div class="infos">
+                    <h3>Serveur communautaire</h3>
+                    <div class="description">
+                        Petit serveur que tu peux rejoindre pour discuter avec moi !
+                    </div>
+                </div>
+            </div>
         </div>
+        <p>Pour en savoir plus, rejoins le serveur discord !</p>
     </body>
 </html>
