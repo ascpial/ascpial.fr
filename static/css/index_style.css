@@ -190,7 +190,7 @@ h2 {
 .project_card .infos .description {
     padding-left: 5px;
 }
-a.neutral, a.neutral:visited {
+a, a:visited {
     text-decoration: none;
     color:#5757da;
 }
