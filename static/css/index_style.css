@@ -240,3 +240,7 @@ a.gitlab:before {
     background: url("../img/gitlab.png");
     background-size: 24px 24px;
 }
+p.note {
+    font-size: 15px;
+    font-style: italic;
+}
