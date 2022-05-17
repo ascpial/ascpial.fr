@@ -88,32 +88,36 @@ h2 {
     cursor: pointer;
     background-color: #404144;
 }
+.project_card .logo:hover {
+    z-index: 1;
+}
 .project_card .join {
     visibility: hidden;
     opacity: 0;
 	position: absolute;
     border-radius: 5px;
     width:150px;
-    height:30px;
+    height: 30px;
     text-align: center;
     line-height: 30px;
-    top:-40px;
-	background: #404144;
-    transition: opacity 0.25s;
+    bottom: 75px;
+	background: #5865F2;
+    transition: bottom 0.25s;
 }
 .project_card .logo:hover + .join {
     visibility: visible;
     opacity: 1;
+    bottom: 160px;
 }
 .project_card .join:before {
     content: "";
     width: 30px;
-    height:40px;
+    height:30px;
     background: url("../img/discord.png") center/contain;
     display: block;
     position: absolute;
-    top: -2px;
-    left:2px;
+    top: 0px;
+    left: 3px;
 }
 .project_card .join:after {
 	top: 100%;
@@ -125,7 +129,7 @@ h2 {
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(64, 65, 68, 0);
-	border-top-color: #404144;
+	border-top-color: #5865F2;
 	border-width: 10px;
 	margin-left: -10px;
 }
@@ -144,10 +148,12 @@ h2 {
     text-decoration: none;
     position: absolute;
     left: 110px;
+    top: 110px;
+    z-index: 2;
 }
 .project_card .indev .warning {
     position:absolute;
-    bottom: 55px;
+    top: 55px;
     left: -40px;
     height: 0;
     width: 0;
@@ -166,14 +172,14 @@ h2 {
 }
 .project_card .indev .arrow {
 	position: absolute;
-	bottom: 25px;
+	bottom: -15px;
 	left: 20px;
 	height: 0;
 	width: 0;
 	content: "";
     visibility: hidden;
 	border: solid transparent;
-	border-top-color: #fcb929;
+	border-bottom-color: #fcb929;
 	border-width: 15px;
 	margin-left: -15px;
 }
@@ -194,7 +200,7 @@ a, a:visited {
     text-decoration: none;
     color:#5757da;
 }
-a.github {
+a.github, a.gitlab {
     background-color: #2f3136;
     display:block;
     color:#ffffff;
@@ -206,6 +212,8 @@ a.github {
     padding-left: 34px;
     border-radius: 5px;
     line-height: 24px;
+    position: absolute;
+    top: 116px;
 }
 a.github:before {
     width:24px;
@@ -216,19 +224,6 @@ a.github:before {
     content: "";
     background: url("../img/github.png");
     background-size: 24px 24px;
-}
-a.gitlab {
-    background-color: #2f3136;
-    display:block;
-    color:#ffffff;
-    text-decoration: none;
-    position:relative;
-    width: 206px;
-    height: 24px;
-    margin-top:5px;
-    padding-left: 34px;
-    border-radius: 5px;
-    line-height: 24px;
 }
 a.gitlab:before {
     width:24px;
